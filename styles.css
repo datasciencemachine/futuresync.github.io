@@ -23,10 +23,14 @@ h1 {
 
 .middle-container {
   margin: 50px auto;
+  padding-left: 100px;
+  padding-right: 100px;
   text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 3rem;
-  color: #FF2626;
+  color: #000D6B;
+  border-width: 15px;
+  font-size: 2em;
 }
 
 .bottom-container {
