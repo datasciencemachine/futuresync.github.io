@@ -1,7 +1,22 @@
+
 body {
+  padding-top: 100px;
   margin: 0;
   text-align: center;
   color: #40514E;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(https://wallpaperaccess.com/full/3644100.jpg);
+  z-index: -1;
+  opacity: 0.3;
 }
 
 h1 {
@@ -11,14 +26,19 @@ h1 {
 
 .top-container p {
   margin-top: 0;
+  color: black;
 }
 
 .top-container {
-  margin: 50px auto 0 auto;
+  margin: 0px auto 0 auto;
   text-align: center;
   font-family: Sacramento, cursive;
   font-size: 3rem;
   color: #66BFBF;
+}
+
+.top-container h1 {
+  margin: 0;
 }
 
 .middle-container {
