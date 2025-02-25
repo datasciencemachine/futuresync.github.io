@@ -1,34 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Sync</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="top-container">
-      <h1>FUTURE SYNC</h1>
-      <p>
-        Syncing into the future
-      </p>
+</head>
+<body>
+
+    <!-- Top Section -->
+    <header class="top-container">
+        <h1>FUTURE SYNC</h1>
+        <p>Syncing into the future</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" id="contact-link">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="text-container">
+        <p class="text-lg">
+            Our team is dedicated to developing open-source home automation technologies, making smart living more accessible to everyone.
+        </p>
+        <p class="text-lg">
+            We empower startups by helping them overcome software and hardware challenges at every stage of development. Whether you're building automation or any other innovation, we provide the expertise to bring your ideas to life.
+        </p>
+        <p class="text-lg">
+            If you're a smart home startup, we offer exclusive integrations to enhance your products with our open-source automation technologies.
+        </p>
+
+        <!-- Service Cards -->
+        <section class="grid-container">
+            <!-- Consultation Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Get a Free Electronics Consultation</h3>
+                </div>
+                <div class="card-content">
+                    <p>Have a groundbreaking electronics idea but unsure how to make it production-ready? Connect with our hardware experts to turn your concept into reality.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSftLsCVQFKv73hFOZ9Vk9ZFqO0x9whbxRS9N8pDcn2Ph2Tnhw/viewform?usp=header" target="_blank" class="button">Book Free Consultation</a>
+                </div>
+            </div>
+
+            <!-- Product Development Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">End-to-End Product Development for Startups</h3>
+                </div>
+                <div class="card-content">
+                    <p>From prototyping to full-scale production, our engineering and development team supports you at every stage. Get tailored solutions for hardware, firmware, and manufacturing.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSftLsCVQFKv73hFOZ9Vk9ZFqO0x9whbxRS9N8pDcn2Ph2Tnhw/viewform?usp=header" target="_blank" class="button">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bottom-container">
+        <p class="copyright">© 2025 Future Sync</p>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/company/future-sync-gen/" target="_blank">LinkedIn</a></p>
+            <p>Email: syncfuture12@gmail.com</p>
+            <p>Phone: 9582850994</p>
+        </div>
     </div>
 
-    <div></div>
+    <!-- JavaScript -->
+    <script>
+        var modal = document.getElementById("contact-modal");
+        var contactLink = document.getElementById("contact-link");
+        var closeBtn = document.getElementsByClassName("close")[0];
 
-    <div class="middle-container">
-      <p>
-        Our team aims to revolutionize the world of smart homes, by completely eradicating the notion of “Smart Homes being a luxury”.
-      </p>
-      <p>
-        Our unique business idea turns the dream of having a <strong>Smart Home</strong> at the price of a <strong>Standard Home</strong>.
-      </p>
-    </div>
+        contactLink.onclick = function() {
+            modal.style.display = "block";
+        }
 
-    <div class="bottom-container">
-      <p class="copyright">© 2021 Future Sync</p>
-    </div>
-  </body>
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
 </html>
